@@ -10,8 +10,8 @@ Application Event generator for Go.
 - Generate publisher in external layer
 - Generate subscriber in external layer
 - Generate multi publisher in external layer
-- Generate publisher in adaptor layer (Using external layer publisher and implemented application layer publisher)
-- Generate subscriber in adaptor layer (Using external layer subscriber and implemented application layer subscriber)
+- Generate publisher in adapter layer (Using external layer publisher and implemented application layer publisher)
+- Generate subscriber in adapter layer (Using external layer subscriber and implemented application layer subscriber)
 - Custom template
 
 ## Usage
@@ -89,7 +89,7 @@ def
 generated
 - [./_example/appliation/event_gen.go](./_example/application/event_gen.go)
 - [./_example/external/appevent/event_gen.go](./_example/external/appevent/event_gen.go)
-- [./_example/adaptor/appevent/event_gen.go](./_example/adaptor/appevent/event_gen.go)
+- [./_example/adapter/appevent/event_gen.go](./_example/adapter/appevent/event_gen.go)
 
 ## Installation
 

@@ -24,7 +24,7 @@ import (
 var defaultTemplates = []genappevent.TemplateRenderer{
 	genappevent.GoApplicationTmpl,
 	genappevent.GoExternalClientTmpl,
-	genappevent.GoAdaptorPubsubberBaseTmpl,
+	genappevent.GoAdapterPubsubberBaseTmpl,
 }
 
 func main() {

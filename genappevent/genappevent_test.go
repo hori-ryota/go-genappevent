@@ -183,11 +183,11 @@ func ExampleRun_genForGoExternalClientTmpl() {
 	// }
 }
 
-func ExampleRun_genForGoAdaptorPubsubberBaseTmpl() {
+func ExampleRun_genForGoAdapterPubsubberBaseTmpl() {
 	targetDir := "../_example/application"
 	if err := genappevent.Run(
 		targetDir,
-		genappevent.GoAdaptorPubsubberBaseTmpl.RendererFunc(
+		genappevent.GoAdapterPubsubberBaseTmpl.RendererFunc(
 			os.Stdout,
 			"github.com/hori-ryota/go-genappevent/_example/application",
 			"github.com/hori-ryota/go-genappevent/_example/domain",

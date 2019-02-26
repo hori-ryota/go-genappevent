@@ -8,8 +8,8 @@ import (
 	"unicode"
 )
 
-var GoAdaptorPubsubberBaseTmpl = TemplateRenderer{
-	Tmpl: template.Must(template.New("GoAdaptorPubsubberBaseTmpl").Funcs(map[string]interface{}{
+var GoAdapterPubsubberBaseTmpl = TemplateRenderer{
+	Tmpl: template.Must(template.New("GoAdapterPubsubberBaseTmpl").Funcs(map[string]interface{}{
 		"FmtImports":   FmtImports,
 		"ToUpperCamel": ToUpperCamel,
 		"ToLowerCamel": ToLowerCamel,
