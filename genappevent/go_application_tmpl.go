@@ -64,7 +64,7 @@ package {{ .PackageName }}
 	}
 {{- end }}
 `)),
-	AppendImportPackages: func(paramType string, recommendedImportPackages ...string) []string {
+	ResolveImportPackages: func(paramType string, recommendedImportPackages ...string) []string {
 		results := make([]string, 0, 4)
 		results = append(results, "context", "time")
 

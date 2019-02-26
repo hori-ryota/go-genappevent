@@ -114,7 +114,7 @@ package appevent
 
 {{- end }}
 `)),
-	AppendImportPackages: func(paramType string, recommendedImportPackages ...string) []string {
+	ResolveImportPackages: func(paramType string, recommendedImportPackages ...string) []string {
 		return []string{"context", "sync", "time"}
 	},
 }

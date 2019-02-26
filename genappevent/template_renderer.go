@@ -8,15 +8,15 @@ import (
 )
 
 type TemplateRenderer struct {
-	Tmpl                 *template.Template
-	AppendImportPackages func(paramType string, recommendedImportPackages ...string) []string
+	Tmpl                  *template.Template
+	ResolveImportPackages func(paramType string, recommendedImportPackages ...string) []string
 }
 
 func (r TemplateRenderer) RendererFunc(w io.Writer, recommendedImportPackages ...string) func(param TmplParam) error {
 	return func(param TmplParam) error {
 		for _, event := range param.Events {
 			for _, p := range event.Params {
-				param.ImportPackages = append(param.ImportPackages, r.AppendImportPackages(p.Type, recommendedImportPackages...)...)
+				param.ImportPackages = append(param.ImportPackages, r.ResolveImportPackages(p.Type, recommendedImportPackages...)...)
 			}
 		}
 
